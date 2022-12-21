@@ -10,18 +10,38 @@
     </head>
     <body>
         <header>
+            <img src="imagenes/logo.png" alt="Logotipo de Alura">
         </header>
 
         <main>
-            <input type="text" id="textoEncriptado">
-            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
-            <button type="button" id="botonEncriptado">Encriptar</button>
-            <button type="button" id="botonDesencriptar">Desencriptar</button>
-            <button type="button" id="botonCopiar">Copiar</button>
+            <section class="txtentrada">
+                <input type="text" id="textoEncriptado">
+            </section>
+            
+            <section class="muneco">
+                <img src="imagenes/muneco.png" alt="Persona buscando">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </section>
+
+            <section class="txtResultado" display: none>
+                <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+                
+
+            </section>
+            
+            <section class="botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptar">Desencriptar</button>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </section>
            
         </main>
 
         <footer>
+            <img src="imagenes/Logo LLB.png">
+            <p> &copy  Diseñado por Luis Luce</p>
         </footer>
     </body>
     <script>

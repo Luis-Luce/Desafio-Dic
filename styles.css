@@ -1,3 +1,47 @@
+header{
+    position: relative;
+    left: 30px;
+    top: 20px;
+    bottom: 0%;
+}
+.txtentrada{
+    position: relative;
+    width: 577px;
+    height: 48px;
+    left: 168px;
+    color: #0a3871;
+    border-color: cornflowerblue;
+}
+.muneco{
+    visibility: visible;
+    position: relative;
+    width: 336px;
+    height: 304px;
+    left: 40%;
+    top: 5%;
+    border-style: double;
+}
+.muneco h1{
+    font-weight: bold;
+}
+.muneco textarea{
+    color: red;
+  
+}
+.txtResultado{
+    display: none;
+}
+
+
+
+
 #botonCopiar{
     display: none;
+}
+
+
+
+footer{
+    text-align: left;
+    padding: 2em;
 }

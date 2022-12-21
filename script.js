@@ -14,6 +14,13 @@ function encriptar(){
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
     document.getElementById("botonCopiar").style.display = "show";
     document.getElementById("botonCopiar").style.display = "inherit";
+    document.getElementsByTagName("muneco").visibility="hidden";
+    /*document.getElementById("muneco").style.display ="inherit";*/
+    document.getElementsByTagName("txtResultado").visibility="visible";
+    document.getElementsByTagName("muneco").visibility="inherit";
+    /* document.getElementsByName("muneco").style.visibility = "hidden";
+    document.getElementById("txtResultado").style.display ="show";
+    document.getElementById("txtResultado").style.display ="inherit"; */
 }
 
 function desencriptar(){
