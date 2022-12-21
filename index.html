@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Ncripto</title>
+        <link rel="stylesheet" href="reset.css">   
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        </header>
+
+        <main>
+            <input type="text" id="textoEncriptado">
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+            <button type="button" id="botonEncriptado">Encriptar</button>
+            <button type="button" id="botonDesencriptar">Desencriptar</button>
+            <button type="button" id="botonCopiar">Copiar</button>
+           
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+    <script>
+        var btn = document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#botonDesencriptar");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#botonCopiar");
+        btn3.onclick = copiar;
+    </script>
+</html>
