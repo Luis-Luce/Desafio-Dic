@@ -52,8 +52,7 @@ body{
     margin-top: 20%;
     margin-left: 7%;
     width: 90%;
-    height: auto;
-   
+    height: auto; 
 }
 #texto{
     margin-left: 5%;
@@ -119,13 +118,30 @@ body{
     margin-left: 10%;
     background: #d8dfe8;
 }
+.txtMensajeCel{
+    display: none;
+}
+.txtcelVista{
+    display: none;
+}
 footer{
     text-align: center;
     padding: 2em;
 }
 @media screen and (max-width: 375px){
-    body{
-        background: red;
-        
+    .container, .izquierdo, .derecho, .btnEncripto, .btnDesEncripto {
+        width: auto;
+    }
+    .derecho{
+        display: none;
+    }
+    .botoneras{
+        width: 375px;
+    }
+    .txtMensajeCel, .txtcelVista {
+        display: inline;
+    }
+    .botoneras {
+        background-color: aqua;
     }
 }

@@ -10,10 +10,12 @@
         <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap'); </style>
     </head>
     <body>
-        <div class="container">
+        <div class="encabezado">
             <div class="logo">
                 <img class="logoImagen" src="Imagenes/logo.png" alt="Loogotipo de Alura">
             </div>
+        </div>
+        <div class="container">
             <div class="izquierdo">
                 <input class="txtEntrada" id="txtInput" type="text" placeholder="Introduce aqui el texto">
             </div>
@@ -28,7 +30,13 @@
                 <button class="btnEncripto" type="button" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
                 <button class="btnDesEncripto" type="button" id="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
-
+            <div class="txtMensajeCel">
+                <h1 id="txt_mensaje">Ningun mensaje fue encontrado aca</h1>
+            </div>
+            <div class="txtcelVista">
+                <textarea = texto2></textarea>
+                <button type="button" id="btn_copiar" onclick=copiar()>Copiar</button>
+            </div>
         </div>
         
     </body>
