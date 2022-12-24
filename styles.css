@@ -1,4 +1,131 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #E5E5E5;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+}
+.logo{
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    background-color: #E5E5E5;
+}
+.logoImagen{
+    margin-top: 1%;
+    margin-left: auto;
+    float: inherit;
+    transform: scale(130%);
+}
+.izquierdo{
+    float: left;
+    width: 70%;
+    height: 68%;
+    border-radius: 30px;
+    
+}
+.txtEntrada{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: #0A3871;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: #E5E5E5;
+}
+.derecho{
+    float: right;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    background: radial-gradient(#567396 10%, #E5E5E5 90%);
+}
+#muneco{
+    margin-top: 20%;
+    margin-left: 7%;
+    width: 90%;
+    height: auto;
+   
+}
+#texto{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#texto2{
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    color: #0A3871;
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    display: none;
+    background: none;
+}
+#btn_copiar{
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: #d8dfe8;
+    border-radius: 25px;
+    display: none;
+}
+.botoneras{
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btnEncripto:hover{
+    opacity: 70%;
+    width: 20%;
+    transition: 50ms;
+    font-size: 110%;
+    border-color: silver;
+}
+#btn_encriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: 15%;
+    background: #0A3871;
+}
+.btnDesEncripto:hover{
+    opacity: 70%;
+    width: 20%;
+    transition: 50ms;
+    font-size: 110%;
+    border-color: silver;
+}
+#btn_desencriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: 10%;
+    background: #d8dfe8;
+}
 footer{
-    text-align: left;
+    text-align: center;
     padding: 2em;
+}
+@media screen and (max-width: 375px){
+    body{
+        background: red;
+        
+    }
 }
