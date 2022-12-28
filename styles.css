@@ -6,28 +6,30 @@ body{
 }
 .container{
     margin: auto;
-    width: 960px;
-    height: 650px;
+    width: 1440px;
+    height: 1024px;
     padding: 5px;
 }
 .logo{
-    margin-top: 10px;
+    margin-top: 5%;
+    margin-left: 20px;
     width: 100%;
     float: left;
-    background-color: #E5E5E5;
+    background: #E5E5E5;
+    mix-blend-mode: color-burn;
 }
 .logoImagen{
     margin-top: 1%;
-    margin-left: auto;
+    margin-left: 5%;
     float: inherit;
-    transform: scale(130%);
+    transform: scale(150%);
+    background: #E5E5E5;
 }
 .izquierdo{
     float: left;
     width: 70%;
     height: 68%;
     border-radius: 30px;
-    
 }
 .txtEntrada{
     float: left;
@@ -36,7 +38,7 @@ body{
     width: 80%;
     height: 80%;
     color: #0A3871;
-    font-size: 30px;
+    font-size: clamp(12px, 8vw ,75px);
     border: none;
     outline: none;
     background: #E5E5E5;
@@ -44,7 +46,7 @@ body{
 .derecho{
     float: right;
     width: 30%;
-    height: auto;
+    height: 80%;
     border-radius: 10px;
     background: radial-gradient(#567396 10%, #E5E5E5 90%);
 }
@@ -63,7 +65,7 @@ body{
     margin-left: 10%;
     margin-top: 20px;
     color: #0A3871;
-    width: 80%;
+    width: 90%;
     height: 60%;
     border: none;
     outline: none;
@@ -73,7 +75,7 @@ body{
 }
 #btn_copiar{
     margin-left: 33%;
-    margin-top: 90%;
+    margin-top: 80px;
     padding: 24px;
     width: 40%;
     height: 10%;
@@ -81,19 +83,31 @@ body{
     border-radius: 25px;
     display: none;
 }
+.exclamacion{
+    margin-left: 10%;
+    width: 16px;
+    height: 10px;
+    display: inline-block;
+    mix-blend-mode: color-burn;
+}
+.mensaje{
+    font-size: 15px;
+    color: #495057;
+}
 .botoneras{
-    float: left;
+    float: inline-end;
     width: 70%;
     height: auto;
     border-radius: 20px;
     font-weight: bold;
 }
-.btnEncripto:hover{
-    opacity: 70%;
-    width: 20%;
-    transition: 50ms;
-    font-size: 110%;
-    border-color: silver;
+.derechoCel{
+    visibility: hidden;
+    float:inline-end;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background: radial-gradient(#567396 10%, #E5E5E5 90%);
 }
 #btn_encriptar{
     padding: 24px;
@@ -102,6 +116,11 @@ body{
     border-radius: 20px;
     margin-left: 15%;
     background: #0A3871;
+    opacity: 70%;
+    width: 20%;
+    transition: 50ms;
+    font-size: 110%;
+    border-color: silver;
 }
 .btnDesEncripto:hover{
     opacity: 70%;
@@ -118,30 +137,109 @@ body{
     margin-left: 10%;
     background: #d8dfe8;
 }
-.txtMensajeCel{
+#derechoCel{
     display: none;
 }
-.txtcelVista{
-    display: none;
-}
+
 footer{
     text-align: center;
     padding: 2em;
+    mix-blend-mode: color-burn;
 }
-@media screen and (max-width: 375px){
-    .container, .izquierdo, .derecho, .btnEncripto, .btnDesEncripto {
+
+@media screen and (min-width:360px) and (max-width:380px){
+    .container, .btnEncripto, .btnDesEncripto {
         width: auto;
+        height: auto;
+    }   
+    .txtEntrada{
+        width: auto;
+        height: 200px;
+    } 
+    .izquierdo {
+        width: auto;
+        height: 70%;
     }
     .derecho{
         display: none;
+    }    
+    #derechoCel{
+        display: none;
+        visibility: visible;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    #texto2Bis{
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        height: 100px;
+        width: 88%;
+        font-size: x-large;
+        border-radius: 20px;
+        float: inherit;
     }
     .botoneras{
         width: 375px;
+        padding: 20px;
     }
-    .txtMensajeCel, .txtcelVista {
-        display: inline;
+    #btn_encriptar, #btn_desencriptar, #btn_copiarCel {
+        width: 375px;
+        padding: 20px;
+        margin-left: 30px;
+        float: inline-end;
+        width: 70%;
+        height: auto;
+        border-radius: 20px;
+        font-weight: bold;
     }
-    .botoneras {
-        background-color: aqua;
+    .footer{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:768px) {
+    .container, .btnEncripto, .btnDesEncripto {
+        width: 768px;
+        height: auto;
+    }   
+    .txtEntrada{
+        width: auto;
+        height: 200px;
+    } 
+    .izquierdo {
+        width: 90%;
+        height: 70%;
+    }
+    .derecho{
+        display: none;
+    }    
+    #derechoCel{
+        display: none;
+        visibility: visible;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    #texto2Bis{
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        height: 100px;
+        width: 88%;
+        font-size: x-large;
+        border-radius: 20px;
+        float: inherit;
+    }
+    
+    #btn_encriptar, #btn_desencriptar, #btn_copiarCel {
+        width: 375px;
+        padding: 20px;
+        margin-left: 30px;
+        height: auto;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .footer{
+        margin-top: 15px;
     }
 }

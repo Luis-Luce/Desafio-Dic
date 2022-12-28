@@ -11,14 +11,17 @@ function encriptar() {
     document.getElementById("muneco").style.display = "none";
     document.getElementById("texto").style.display = "none";  
     document.getElementById("texto2").style.display ="revert"; 
-    document.getElementById("texto2").innerHTML = txtCifrado;  
+    document.getElementById("texto2").innerHTML = txtCifrado;
     document.getElementById("btn_copiar").style.display = "show";
     document.getElementById("btn_copiar").style.display = "inherit";
-    document.getElementById("txtMensajeCel").style.display ="none";
-    document.getElementById("txtcelVista").style.display ="none";
-
+    //Empieza la adaptacion para cel
+    document.getElementById("textoCel").style.display = "none";
+    document.getElementById("texto2Bis").innerHTML = txtCifrado; 
+    document.getElementById("derechoCel").style.display ="show";
+    document.getElementById("derechoCel").style.display ="inherit";
+    //document.getElementById("btn_copiarCel").style.display = "show";
+    //document.getElementById("btn_copiarCel").style.display = "inherit";
 }
-
 function desencriptar() {
     //mismo trabajo que el encriptado pero a la inversa
     var texto = document.getElementById("txtInput").value.toLowerCase()
@@ -27,7 +30,6 @@ function desencriptar() {
     var txtCifrado = txtCifrado.replace(/imes/img, "i");
     var txtCifrado = txtCifrado.replace(/ai/img, "a");
     var txtCifrado = txtCifrado.replace(/ufag/img, "u");
-
     //declaro el comportamiento dinamico de las celdas
     document.getElementById("muneco").style.display = "none";
     document.getElementById("texto").style.display = "none"; 
@@ -35,10 +37,11 @@ function desencriptar() {
     document.getElementById("texto2").innerHTML = txtCifrado;  
     document.getElementById("btn_copiar").style.display = "show";
     document.getElementById("btn_copiar").style.display = "inherit";
-    document.getElementById("txtMensajeCel").style.display ="show";
-    document.getElementById("txtMensajeCel").style.display ="inherit";
-    document.getElementById("txtcelVista").style.display ="show";
-    document.getElementById("txtcelVista").style.display ="inherit";
+    //Empieza la adaptacion para cel
+    document.getElementById("textoCel").style.display = "none";
+    document.getElementById("texto2Bis").innerHTML = txtCifrado; 
+    document.getElementById("derechoCel").style.display ="show";
+    document.getElementById("derechoCel").style.display ="inherit";
 }
 
 function copiar() {
@@ -50,6 +53,11 @@ function copiar() {
     document.getElementById("texto").style.display = "revert";
     document.getElementById("texto2").style.display ="none";  
     document.getElementById("btn_copiar").style.display = "none";
-    document.getElementById("btn_copiar").style.display = "none";
-
+}
+    //Funcion solo para Celuluar y tablet
+function copiarCel() {
+    var contenidoCel = document.querySelector("#texto2Bis");
+    contenidoCel.select();
+    document.execCommand("copy");
+    
 }
