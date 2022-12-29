@@ -74,13 +74,13 @@ body{
     background: none;
 }
 #btn_copiar{
-    margin-left: 33%;
+    /*margin-left: 33%;
     margin-top: 80px;
     padding: 24px;
     width: 40%;
     height: 10%;
     background: #d8dfe8;
-    border-radius: 25px;
+    border-radius: 25px;*/
     display: none;
 }
 .exclamacion{
@@ -109,34 +109,7 @@ body{
     border-radius: 10px;
     background: radial-gradient(#567396 10%, #E5E5E5 90%);
 }
-#btn_encriptar{
-    padding: 24px;
-    width: 236px;
-    height: 60%;
-    border-radius: 20px;
-    margin-left: 15%;
-    background: #0A3871;
-    opacity: 70%;
-    width: 20%;
-    transition: 50ms;
-    font-size: 110%;
-    border-color: silver;
-}
-.btnDesEncripto:hover{
-    opacity: 70%;
-    width: 20%;
-    transition: 50ms;
-    font-size: 110%;
-    border-color: silver;
-}
-#btn_desencriptar{
-    padding: 24px;
-    width: 30%;
-    height: 60%;
-    border-radius: 20px;
-    margin-left: 10%;
-    background: #d8dfe8;
-}
+
 #derechoCel{
     display: none;
 }
@@ -183,16 +156,7 @@ footer{
         width: 375px;
         padding: 20px;
     }
-    #btn_encriptar, #btn_desencriptar, #btn_copiarCel {
-        width: 375px;
-        padding: 20px;
-        margin-left: 30px;
-        float: inline-end;
-        width: 70%;
-        height: auto;
-        border-radius: 20px;
-        font-weight: bold;
-    }
+   
     .footer{
         margin-top: 15px;
     }

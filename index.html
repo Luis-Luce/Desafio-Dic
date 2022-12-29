@@ -6,9 +6,32 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="script.js"></script>
-        <title>NCripto v 0.1 </title>
+        <title>NCripto v 1.0 </title>
+        <link rel="website icon" type="png" href="Imagenes/Logo LLB.png">
         <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap'); </style>
+        
+        <style rel="stylesheet">
+                button{
+                border: none;
+                border-radius: 8px;
+                padding: 4px;
+                overflow: hidden;
+                background-image: linear-gradient(150deg, #00ddeb, #5b42f3 50%, #af40ff);
+            }
+            button span{
+                display: flex;
+                border-radius: 6px;
+                padding: 16px 128px;
 
+                color: #fff;
+                font-size: 22px;
+                background-color: #0A3871;
+                transition: 300ms;
+            }
+            button:hover span {
+                background: transparent;
+            }
+        </style>
     </head>
     <body>
         <div class="encabezado">
@@ -24,19 +47,27 @@
                 <img src="imagenes/aside-icon.svg" alt="Muñeco investigando" id="muneco">
                 <h1 id="texto">Ningun mensaje fue encontrado</h1>
                 <textarea id="texto2" name="cajatxtDerecha" id="cajatxtDerecha" cols="25" rows="8">Ingrese el texto que desees encriptar o desencriptar</textarea>
-                <button type="button" id="btn_copiar" onclick=copiar()>Copiar</button>
+                <button id="btn_copiar" onclick=copiar()>
+                    <span>Copiar </span>
+                </button>
             </div>
             <div class="botoneras">
                 <p class="mensaje">
                     <img class="exclamacion" src="imagenes/exclamation.png"> Solo minusculas y sin acentos
                 </p>
-                <button type="button" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
-                <button class="btnDesEncripto" type="button" id="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button id="btn_encriptar" onclick="encriptar()">
+                    <span>Encriptar</span>
+                </button>
+                <button class="btnDesEncripto" id="btn_desencriptar" onclick="desencriptar()">
+                    <span>Desencriptar</span>
+                </button>
             </div>
             <div class="derechoCel" id="derechoCel">
                 <h1 id="textoCel">Ningun mensaje fue encontrado</h1>
                 <textarea id="texto2Bis" name="cajatxtDerecha" id="cajatxtDerechabis" cols="25" rows="8">Ingrese el texto que desees encriptar o desencriptar</textarea>
-                <button type="button" id="btn_copiarCel" onclick=copiarCel()>Copiar</button>
+                <button type="button" id="btn_copiarCel" onclick=copiarCel()>
+                    <span>Copiar</span>
+                </button>
             </div>
         </div>
         
@@ -45,7 +76,4 @@
         <p> &copy  Diseñado por Luis Luce</p>
         <img src="imagenes/Logo LLB.png">
     </footer>
-<!--* pendientes por hacer
-quiero agregar el formato de bton que encontre
--->
 </html>
